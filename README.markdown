@@ -11,6 +11,7 @@
   * [Generics](#generics)
   * [Class Prefixes](#class-prefixes)
   * [Language](#language)
+  * [Images](#images)
 * [Code Organization](#code-organization)
   * [File structure](#file-structure)
   * [Protocol Conformance](#protocol-conformance)
@@ -202,6 +203,17 @@ let color = "red"
 ```swift
 let colour = "red"
 ```
+
+### Images
+
+Image names should be named consistently to preserve organization and developer sanity. They should be named as one camel case string with a description of their purpose, followed by the un-prefixed name of the class or property they are customizing (if there is one), followed by a further description of color and/or placement, and finally their state.
+
+**For example:**
+
+* `RefreshBarButtonItem` / `RefreshBarButtonItem@2x` and `RefreshBarButtonItemSelected` / `RefreshBarButtonItemSelected@2x`
+* `ArticleNavigationBarWhite` / `ArticleNavigationBarWhite@2x` and `ArticleNavigationBarBlackSelected` / `ArticleNavigationBarBlackSelected@2x`.
+
+Images that are used for a similar purpose should be grouped in respective groups in an Images folder or Asset Catalog.
 
 ## Code Organization
 
